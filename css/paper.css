@@ -1,0 +1,60 @@
+.conMain {
+	width: 1179px;
+	padding: 30px;
+	overflow: hidden;
+}
+
+.paperDataWrap {
+	/*width: 100%;
+	padding: 30px;
+	overflow: hidden;*/
+}
+
+.paperData {
+	width: 100%;
+	margin: 0 auto;
+	/*margin-top: 30px;*/
+	/*border: 1px #E8EAED solid;*/
+	border-spacing: 0;
+	border-collapse: collapse;
+	font-size: 12px;
+	background-color: #fff;
+}
+
+.paperData thead {
+	background: url('../img/paperData_thead_bg.jpg') repeat-x 0 0;
+}
+
+.paperData th {
+	height: 37px;
+	border: 1px #E8EAED solid;
+	font-weight: 500;
+	color: #5a636e;
+}
+
+.pd_th_w6 {
+	width: 6%;
+}
+
+.pd_th_w10 {
+	width: 10%;
+}
+
+.pd_th_w12 {
+	width: 12%;
+}
+
+.pd_th_w15 {
+	width: 15%;
+}
+
+.pd_th_w18 {
+	width: 18%;
+}
+
+.paperData td {
+	padding: 6px 5px;
+    line-height: 23px;
+    border: 1px #E8EAED solid;
+    text-align: center;
+}

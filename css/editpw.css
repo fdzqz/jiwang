@@ -1,0 +1,64 @@
+.cnSecItem {
+	width: 110px;
+	background: url('../img/conNav_bg.png') no-repeat -65% 0;
+	padding-left: 10px; 
+}
+
+/* 密码修改 */
+
+.editpwBox {
+	width: 1180px;
+	height: 315px;
+	margin: 30px 0 0 30px;
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+.editpwTit {
+	width: 1135px;
+	margin: 0 auto;
+	line-height: 80px;
+	border-bottom: 1px #aaa dotted;
+	font-size: 18px;
+	font-family: 'microsoft yahei';
+}
+
+.editpwForm {
+	width: 270px;
+	margin: 30px 30px;
+}
+
+.editpwItem {
+	width: 270px;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 22px;
+}
+
+.editpwLab {
+	display: inline-block;
+	width: 110px;
+	line-height: 24px;
+	text-align: right;
+	font-size: 12px;
+}
+
+.editpwInp {
+	width: 150px;
+	height: 24px;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #cecece;
+}
+
+.editpwBtn {
+	height: 30px;
+	padding: 0 6px;
+	margin: 0 auto;
+	margin-left: 120px;
+	border: 1px solid #303942;
+	border-radius: 3px;
+	background-color: #303942;
+	color: #fff;
+	cursor: pointer;
+}

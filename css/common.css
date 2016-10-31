@@ -1,0 +1,267 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: Tahoma, 'SimSun';
+}
+
+/* 头部开始 */
+
+.header {
+	width: 100%;
+	height: 75px;
+	background: url(../img/hea_bg.jpg) repeat-x;
+	overflow: hidden;
+}
+
+.adminLogo {
+	float: left;
+}
+
+.perInfor {
+	float: right;
+	margin-top: 28px;
+	margin-right: 10px;
+	font-size: 12px;
+	color: #000;
+	overflow: hidden;
+}
+
+.welCon {
+	float: left;
+	display: inline-block;
+	padding: 0;
+	padding-top: 3px;
+	margin: 0;
+	margin-right: 15px;
+}
+
+.perInforLink {
+	float: left;
+	display: inline-block;
+	height: 20px;
+	margin-right: 15px;
+	font-size: 12px;
+	text-decoration: none;
+	color: #000;
+	overflow: hidden;
+}
+
+.perInforLink span {
+	line-height: 20px;
+	margin-left: 2px;
+}
+
+.perInforLink span:hover {
+	color: #588C0E;
+}
+
+.logOut_ico, .annou_ico,
+.changeWp_ico, .help_ico {
+	float: left;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-top: 2px;
+}
+
+.changeWp_ico {
+	background: url(../img/perInfor_ico.png) no-repeat 14% 0;
+}
+
+.logOut_ico {
+	background: url(../img/perInfor_ico.png) no-repeat 14% 0;
+}
+
+.annou_ico {
+	background: url(../img/perInfor_ico.png) no-repeat 0 0;
+}
+
+.help_ico {
+	background: url(../img/perInfor_ico.png) no-repeat 9% 0;
+}
+
+/* 主体开始 */
+
+/* 左边菜单开始 */
+
+.container {
+	float: left;
+	width: 100%;
+	min-height: 565px;
+	padding: 0;
+	margin: 0;
+	background: url('../img/container_bg.jpg') repeat;
+	overflow: hidden;
+}
+
+.lefMenuWrap {
+	float: left;
+	width: 111px;
+	padding-bottom: 9999px;
+	margin-bottom: -9999px; 
+	border-right: 1px #030304 solid;
+	background: url('../img/menu_bg.jpg') repeat;
+}
+
+.lefMenu {
+	padding: 0;
+	margin: 0;
+}
+
+.menuItem {
+	float: left;
+	width: 111px;
+	height: 76px;
+	border-bottom: 1px #3E454F solid;
+	list-style-type: none;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+.menuLink {
+	display: block;
+	width: 80px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 10px;
+	font-size: 12px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+.iden_ico, .charge_ico, .paper_ico,
+.order_ico, .agent_ico, .agCharge_ico,
+.sale_ico {
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
+	margin-bottom: 3px;
+}
+
+.iden_ico {
+	background: url('../img/lefMenu_ico.png') no-repeat 38% 0;
+}
+
+.charge_ico {
+	background: url('../img/lefMenu_ico.png') no-repeat 38% 0;
+}
+
+.paper_ico {
+	background: url('../img/lefMenu_ico.png') no-repeat 0 0;
+}
+
+.order_ico {
+	background: url('../img/lefMenu_ico.png') no-repeat 25.5% 0;
+}
+
+.agent_ico {
+	background: url('../img/lefMenu_ico.png') no-repeat 32% 0;
+}
+
+.agCharge_ico {
+	background: url('../img/lefMenu_ico.png') no-repeat 19% 0;
+}
+
+.sale_ico {
+	background: url('../img/lefMenu_ico.png') no-repeat 38% 0;
+}
+
+/* 索引所在样式 */
+.menu_cur {
+	width: 112px;
+	opacity: 1;
+	filter: alpha(opacity=100);
+	background: url(../img/menu_cur.png) no-repeat 0 -12px;
+}
+
+
+/* 主体开始 */
+
+.conWrap {
+	background: url(../img/hea_bg.jpg) repeat-x 0 -75px;
+	margin-left: 112px;
+	margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+.content {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+/* 主体索引 */
+
+.conNav {
+	width: 100%;
+	height: 35px;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.conNavItem {
+	float: left;
+	list-style-type: none;
+}
+
+.conNavLink {
+	display: inline-block;
+}
+
+.index_ico {
+	float: left;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin: 10px 0 0 30px; 
+	background: url('../img/perInfor_ico.png') no-repeat 5% 0;
+}
+
+.cnFirItem {
+	width: 130px;
+	background: url('../img/conNav_bg.png') no-repeat -83% 0;
+}
+
+.cnSecItem {
+	width: 90px;
+	background: url('../img/conNav_bg.png') no-repeat -40% 0;
+	padding-left: 10px; 
+}
+
+.conNavItem span {
+	float: left;
+	display: inline-block;
+	margin: 10px 0 0 5px;
+	font-size: 12px;
+	color: #959BA1;
+}
+
+/* 主体标题 */
+.conTit {
+	padding: 0;
+	margin: 0;
+	height: 65px;
+	overflow: hidden;
+}
+
+.conTit_ico {
+	float: left;
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	margin: 20px 5px 0 30px; 
+	background: url('../img/lefMenu_ico.png') no-repeat 1% 41.5%;
+}
+
+.conTit span {
+	float: left;
+	padding: 0;
+	margin: 0;
+	line-height: 65px;
+	font-size: 18px;
+	font-family: 'Microsoft Yahei';
+	letter-spacing: 1px;
+}

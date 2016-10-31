@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>流量运营系统 v1.0</title>
+    <link rel='stylesheet' href='css/common.css'>
+    <link rel='stylesheet' href='css/editpw.css'>
+</head>
+<body>
+    <!-- 头部 -->
+    <div id='header' class='header'>
+        <!-- 网站LOGO -->
+        <a href='index.html' class='adminLogo'><img src='img/admin_logo.png' /></a>
+        <div class='perInfor'>
+            <p class='welCon'>欢迎您，<strong class='w_userName'></strong></p>
+            <a href='editpw.html' class='perInforLink'><i class='changeWp_ico'></i><span>修改密码</span></a>
+            <a href='#' class='perInforLink logOut'><i class='logOut_ico'></i><span>退出登录</span></a>
+            <a href='#' class='perInforLink'><i class='annou_ico'></i><span>公告</span></a>
+            <a href='#' class='perInforLink'><i class='help_ico'></i><span>帮助</span></a>
+        </div>
+    </div>
+
+    <!-- 主体 -->
+    <div id='container' class='container'>
+        <!-- 菜单 -->
+        <div class='lefMenuWrap'>
+            <ul class='lefMenu'>
+                <li class='menuItem'><a class='menuLink' href='identity.html'><i class='iden_ico'></i><span>用户实名</span></a></li>
+                <li class='menuItem'><a class='menuLink' href='charge.html'><i class='charge_ico'></i><span>用户充值</span></a></li>
+                <li class='menuItem'><a class='menuLink' href='paper.html'><i class='paper_ico'></i><span>库存报表</span></a></li>
+                <li class='menuItem'><a class='menuLink' href='order.html'><i class='order_ico'></i><span>订单管理</span></a></li>
+                <li class='menuItem'><a class='menuLink' href='agent.html'><i class='agent_ico'></i><span>代理商管理</span></a></li>
+                <li class='menuItem'><a class='menuLink' href='agent_charge.html'><i class='agCharge_ico'></i><span>套餐管理</span></a></li>
+                <li class='menuItem'><a class='menuLink' href='sale.html'><i class='sale_ico'></i><span>成品卡充值</span></a></li>
+            </ul>
+        </div>
+        <!-- 主体 -->
+        <div class='conWrap'>
+            <div class='content'>
+                <!-- 主体索引 -->
+                <ul class='conNav'>
+                    <li class='conNavItem cnFirItem'><a class='conNavLink' href='index.html'><i class='index_ico'></i><span>平台首页</span></a></li>
+                    <li class='conNavItem cnSecItem'><a href='index.html'><span>平台用户管理</span></a></li>
+                </ul>
+                <!-- 主体标题 -->
+                <h2 class='conTit'><i class='conTit_ico'></i><span>平台用户管理</span></h2>
+
+                <!-- 密码修改 -->
+                <div class='editpwBox'>
+                    <h2 class='editpwTit'>修改密码</h2>
+                    <form class='editpwForm' type='POST'>
+                        <p class='editpwItem'>
+                            <label class='editpwLab' for='b_password'>原始密码：</label>
+                            <input class='editpwInp' type='password' name='b_password' />
+                        </p>
+                        <p class='editpwItem'>
+                            <label class='editpwLab' for='b_password'>新密码：</label>
+                            <input class='editpwInp' type='password' name='n_password' />
+                        </p>
+                        <p class='editpwItem'>
+                            <label class='editpwLab' for='b_password'>确认密码：</label>
+                            <input class='editpwInp' type='password' name='a_n_password' />
+                        </p>
+                        <p class='editpwItem'>
+                            <input class='editpwBtn' type='button' value='确认提交' />
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='js/lib/jquery.js'></script>
+    <script src='js/page/common.js'></script>
+    <script src='js/page/editpw.js'></script>
+</body>
+</html>
