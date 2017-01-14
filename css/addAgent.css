@@ -1,0 +1,101 @@
+#main {
+    overflow: hidden;
+    padding: 30px;
+}
+#add_agent{
+    background: #fff none repeat scroll 0 0;
+    border-radius: 6px;
+    margin: 0 0 30px;
+    padding: 30px;
+    position: relative;
+    font-size: 12px;
+}
+#add_agent h2 {
+    border-bottom: 1px dotted #aaa;
+    font-family: "microsoft yahei";
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+#add_agent p.s1 {
+    margin-bottom: 18px;
+}
+#add_agent p.s1 label {
+    float:left;
+    display: inline-block;
+    width: 110px;
+    text-align: right;
+}
+#add_agent p.s1 select{
+    font-family: Tahoma, 'SimSun';
+    font-size: 12px;
+}
+#add_agent p.s1 input:focus{
+    border: 1px solid yellowgreen;
+}
+#config_info{
+    top: 100px;
+    width: 340px;
+    right: 30px;
+    line-height: 26px;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    position: absolute;
+    z-index: 10;
+}
+.inp{
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 60px;
+}
+#config_info #con1{
+    background: #eee none repeat scroll 0 0;
+    border: 1px dashed #666;
+    border-radius: 12px;
+    line-height: 26px;
+    margin: 21px 0 0;
+    padding:0 0 0 20px;
+    width: 265px;
+}
+#config_info #con2{
+    background: #eee none repeat scroll 0 0;
+    border: 1px dashed #666;
+    border-radius: 12px;
+    line-height: 26px;
+    margin: 21px 0 0;
+    padding:0 0 0 20px;
+    width: 265px;
+}
+#config_info dd{
+    height: 38px;
+}
+#config_info .txt {
+    height: 26px;
+    line-height: 26px;
+    margin-left: 12px;
+    padding-right: 3px;
+    position: relative;
+    text-align: center;
+    top: -2px;
+    width: 60px;
+}
+.set_1 select{
+    font-family: Tahoma, 'SimSun';
+    font-size: 12px;
+}
+.s1.end input[type="submit"]{
+    background: #303942 none repeat scroll 0 0;
+    border-color: #303942;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    height: 30px;
+    padding: 0 6px;
+    font-family: Tahoma, 'SimSun';
+    font-size: 12px;
+}

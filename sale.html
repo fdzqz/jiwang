@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>流量运营系统 v1.0</title>
+    <link rel='stylesheet' href='css/common.css' />
+    <link rel='stylesheet' href='css/sale.css' />
+</head>
+<body>
+    <!-- 头部 -->
+    <div id='header' class='header'>
+        <!-- 网站LOGO -->
+        <a href='index.html' class='adminLogo'><img src='img/admin_logo.png' /></a>
+        <div class='perInfor'>
+            <p class='welCon'>欢迎您，<strong class='w_userName'></strong></p>
+            <a href='editpw.html' class='perInforLink'><i class='changeWp_ico'></i><span>修改密码</span></a>
+            <a href='#' class='perInforLink logOut'><i class='logOut_ico'></i><span>退出登录</span></a>
+            <a href='#' class='perInforLink'><i class='annou_ico'></i><span>公告</span></a>
+            <a href='#' class='perInforLink'><i class='help_ico'></i><span>帮助</span></a>
+        </div>
+    </div>
+
+    <!-- 主体 -->
+    <div id='container' class='container'>
+        <!-- 菜单 -->
+        <div class='lefMenuWrap'>
+            <ul class='lefMenu'>
+                <li class='menuItem'><a class='menuLink' href='identity.html'><i class='iden_ico'></i><span>用户实名</span></a></li>
+                <li class='menuItem'><a class='menuLink' href='charge.html'><i class='charge_ico'></i><span>用户充值</span></a></li>
+                <li class='menuItem'><a class='menuLink' href='paper.html'><i class='paper_ico'></i><span>库存报表</span></a></li>
+                <li class='menuItem'><a class='menuLink' href='order.html'><i class='order_ico'></i><span>订单管理</span></a></li>
+                <li class='menuItem'><a class='menuLink' href='agent.html'><i class='agent_ico'></i><span>代理商管理</span></a></li>
+                <li class='menuItem'><a class='menuLink' href='agent_charge.html'><i class='agCharge_ico'></i><span>套餐管理</span></a></li>
+                <li class='menuItem menu_cur'><a class='menuLink' href='sale.html'><i class='sale_ico'></i><span>成品卡充值</span></a></li>
+            </ul>
+        </div>
+        <!-- 主体 -->
+        <div class='conWrap'>
+            <div class='content'>
+                <!-- 主体索引 -->
+                <ul class='conNav'>
+                    <li class='conNavItem cnFirItem'><a class='conNavLink' href='index.html'><i class='index_ico'></i><span>平台首页</span></a></li>
+                    <li class='conNavItem cnSecItem'><a href='sale.html'><span>成品卡充值</span></a></li>
+                </ul>
+                <!-- 主体标题 -->
+                <h2 class='conTit'><i class='conTit_ico'></i><span>成品卡充值</span></h2>
+
+                <!-- 可以在这里写相关版块代码 -->
+                <div class='conMain'>
+                    <div class='conMainWrap'>
+                        <form class='sForm'>
+                            <div class='userCode'>
+                                <label class='userCodeLab' for='userCode'>用户码：</label>
+                                <input class='userCodeInp' type='text' name='userCode' placeholder='请输入10646开头的用户码...' />
+                                <!-- <a class='allCharge' href='#'>批量充值</a> -->
+                            </div>
+                            <div class='pacSelect'>
+                                <label class='pacSelectBtn' for='pacSelectBtn'>选择套餐：</label>
+                                <div class='pacTypeUnit'>
+                                    <!-- <div class='pacType'>
+                                        <h4 class='pacTypeTit'>单月套餐</h4>
+                                        <p class='pacTypeItem'>
+                                            <input class='pacTypeItemInp' checked='checked' name='pacType' type='radio' />
+                                            <span class='pacItemType'>1GB单月卡</span>
+                                            <span class='pacTypeItemDet'>￥18.00</span>
+                                        </p>
+                                        <p class='pacTypeItem'>
+                                            <input class='pacTypeItemInp' name='pacType' type='radio' />
+                                            <span class='pacItemType'>2GB单月卡</span>
+                                            <span class='pacTypeItemDet'>￥35.00</span>
+                                        </p>
+                                        <p class='pacTypeItem'>
+                                            <input class='pacTypeItemInp' name='pacType' type='radio' />
+                                            <span class='pacItemType'>3G累计3个月</span>
+                                            <span class='pacTypeItemDet'>￥80.00</span>
+                                        </p>
+                                    </div>
+                                    <div class='pacType'>
+                                        <h4 class='pacTypeTit'>月固定套餐</h4>
+                                        <p class='pacTypeItem'>
+                                            <input class='pacTypeItemInp' name='pacType' type='radio' />
+                                            <span class='pacItemType'>6GB半年/每月1GB</span>
+                                            <span class='pacTypeItemDet'>￥88.00</span>
+                                        </p>
+                                        <p class='pacTypeItem'>
+                                            <input class='pacTypeItemInp' name='pacType' type='radio' />
+                                            <span class='pacItemType'>12GB半年/每月1GB</span>
+                                            <span class='pacTypeItemDet'>￥165.00</span>
+                                        </p>
+                                        <p class='pacTypeItem'>
+                                            <input class='pacTypeItemInp' name='pacType' type='radio' />
+                                            <span class='pacItemType'>24GB半年/每月1GB</span>
+                                            <span class='pacTypeItemDet'>￥280.00</span>
+                                        </p>
+                                        <p class='pacTypeItem'>
+                                            <input class='pacTypeItemInp' name='pacType' type='radio' />
+                                            <span class='pacItemType'>48GB半年/每月1GB</span>
+                                            <span class='pacTypeItemDet'>￥360.00</span>
+                                        </p>
+                                        <p class='pacTypeItem'>
+                                            <input class='pacTypeItemInp' name='pacType' type='radio' />
+                                            <span class='pacItemType'>60GB半年/每月1GB</span>
+                                            <span class='pacTypeItemDet'>￥450.00</span>
+                                        </p>
+                                    </div>
+                                    <div class='pacType'>
+                                        <h4 class='pacTypeTit'>累计套餐</h4>
+                                        <p class='pacTypeItem'>
+                                            <input class='pacTypeItemInp' name='pacType' type='radio' />
+                                            <span class='pacItemType'>2G累计3个月</span>
+                                            <span class='pacTypeItemDet'>￥30.00</span>
+                                        </p>
+                                        <p class='pacTypeItem'>
+                                            <input class='pacTypeItemInp' name='pacType' type='radio' />
+                                            <span class='pacItemType'>3G累计3个月</span>
+                                            <span class='pacTypeItemDet'>￥45.00</span>
+                                        </p>
+                                        <p class='pacTypeItem'>
+                                            <input class='pacTypeItemInp' name='pacType' type='radio' />
+                                            <span class='pacItemType'>6G累计半年</span>
+                                            <span class='pacTypeItemDet'>￥95.00</span>
+                                        </p>
+                                        <p class='pacTypeItem'>
+                                            <input class='pacTypeItemInp' name='pacType' type='radio' />
+                                            <span class='pacItemType'>9G累计半年</span>
+                                            <span class='pacTypeItemDet'>￥135.00</span>
+                                        </p>
+                                        <p class='pacTypeItem'>
+                                            <input class='pacTypeItemInp' name='pacType' type='radio' />
+                                            <span class='pacItemType'>12G累计一年</span>
+                                            <span class='pacTypeItemDet'>￥180.00</span>
+                                        </p>
+                                        <p class='pacTypeItem'>
+                                            <input class='pacTypeItemInp' name='pacType' type='radio' />
+                                            <span class='pacItemType'>18G累计一年</span>
+                                            <span class='pacTypeItemDet'>￥255.00</span>
+                                        </p>
+                                        <p class='pacTypeItem'>
+                                            <input class='pacTypeItemInp' name='pacType' type='radio' />
+                                            <span class='pacItemType'>24G累计一年</span>
+                                            <span class='pacTypeItemDet'>￥320.00</span>
+                                        </p>
+                                        <p class='pacTypeItem'>
+                                            <input class='pacTypeItemInp' name='pacType' type='radio' />
+                                            <span class='pacItemType'>48G累计一年</span>
+                                            <span class='pacTypeItemDet'>￥630.00</span>
+                                        </p>
+                                        <p class='pacTypeItem'>
+                                            <input class='pacTypeItemInp' name='pacType' type='radio' />
+                                            <span class='pacItemType'>60G累计一年</span>
+                                            <span class='pacTypeItemDet'>￥780.00</span>
+                                        </p>
+                                    </div> -->
+                                </div>
+                                <div class='clearfix'></div>
+                            </div>
+                            <div class='payNum'>
+                                <span class='payNumTit'>应付金额：</span><span class='payNumCon'>111</span>
+                            </div>
+                            <div class='payType'>
+                                <div class='payTypeItem'>
+                                    <input type='radio' name='payType' checked='checked' class='payTypeInp alipay' />
+                                    <img class='payTypeImg' src='./img/pay_ali.jpg' />
+                                </div>
+                                <div class='payTypeItem'>
+                                    <input type='radio' name='payType' class='payTypeInp wcpay' />
+                                    <img class='payTypeImg' src='./img/pay_wx.jpg' />
+                                </div>
+                            </div>
+                            <div class='acBtn'>
+                                <input type='button' value='确认提交，进入提交' id='acBtn' />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src='js/lib/jquery.js'></script>
+    <script src='js/page/common.js'></script>
+    <script src='js/page/sale.js'></script>
+</body>
+</html>

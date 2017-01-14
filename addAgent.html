@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>流量运营系统 v1.0</title>
+    <!--<link rel='stylesheet' href='css/admin.css'>-->
+    <link rel='stylesheet' href='./css/common.css'>
+    <link rel='stylesheet' href='./css/addAgent.css'>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+    <script type="text/javascript" src="./date/laydate.dev.js"></script>
+</head>
+<body>
+<!-- 头部 -->
+<div id='header' class='header'>
+    <!-- 网站LOGO -->
+    <a href='index.html' class='adminLogo'><img src='img/admin_logo.png' /></a>
+    <div class='perInfor'>
+        <p class='welCon'>欢迎您，<strong class='w_userName'></strong></p>
+        <a href='editpw.html' class='perInforLink'><i class='changeWp_ico'></i><span>修改密码</span></a>
+        <a href='#' class='perInforLink logOut'><i class='logOut_ico'></i><span>退出登录</span></a>
+        <a href='#' class='perInforLink'><i class='annou_ico'></i><span>公告</span></a>
+        <a href='#' class='perInforLink'><i class='help_ico'></i><span>帮助</span></a>
+    </div>
+</div>
+
+<!-- 主体 -->
+<div id='container' class='container'>
+    <!-- 菜单 -->
+    <div class='lefMenuWrap'>
+        <ul class='lefMenu'>
+            <li class='menuItem menu_cur'><a class='menuLink' href='identity.html'><i class='iden_ico'></i><span>用户实名</span></a></li>
+            <li class='menuItem'><a class='menuLink' href='agent.html'><i class='charge_ico'></i><span>用户充值</span></a></li>
+            <li class='menuItem'><a class='menuLink' href='paper.html'><i class='paper_ico'></i><span>库存报表</span></a></li>
+            <li class='menuItem'><a class='menuLink' href='order.html'><i class='order_ico'></i><span>订单管理</span></a></li>
+            <li class='menuItem'><a class='menuLink' href='charge.html'><i class='agent_ico'></i><span>代理商管理</span></a></li>
+            <li class='menuItem'><a class='menuLink' href='agent_charge.html'><i class='agCharge_ico'></i><span>套餐管理</span></a></li>
+            <li class='menuItem'><a class='menuLink' href='sale.html'><i class='sale_ico'></i><span>成品卡充值</span></a></li>
+        </ul>
+    </div>
+    <!-- 主体 -->
+    <div class='conWrap'>
+        <div class='content'>
+            <!-- 主体索引 -->
+            <ul class='conNav'>
+                <li class='conNavItem cnFirItem'><a class='conNavLink' href='index.html'><i class='index_ico'></i><span>平台首页</span></a></li>
+                <li class='conNavItem cnSecItem'><a href='index.html'><span>二级索引</span></a></li>
+            </ul>
+            <!-- 主体标题 -->
+            <h2 class='conTit'><i class='conTit_ico'></i><span>代理商管理</span></h2>
+
+            <!-- 可以在这里写相关版块代码 -->
+            <div id="main">
+                <div class="wrapper">
+                    <form id="add_agent">
+                        <h2>添加代理商</h2>
+                        <p class="s1"><label >代理商公司名称：</label><input  type="text" size="80"/></p>
+                        <p class="s1">
+                            <label>经营场所地址：</label>
+                            <select name="province">
+                                <option value="1">-省/直辖市-</option>
+                                <option value="2">北京</option>
+                                <option value="3">安徽</option>
+                                <option value="4">福建</option>
+                                <option value="5">甘肃</option>
+                                <option value="6">广东</option>
+                                <option value="7">广西</option>
+                                <option value="8">贵州</option>
+                                <option value="9">海南</option>
+                                <option value="10">河北</option>
+                                <option value="11">河南</option>
+                                <option value="12">黑龙江</option>
+                                <option value="13">湖北</option>
+                                <option value="14">湖南</option>
+                                <option value="15">吉林</option>
+                                <option value="16">江苏</option>
+                                <option value="17">江西</option>
+                                <option value="18">辽宁</option>
+                                <option value="19">内蒙古</option>
+                                <option value="20">宁夏</option>
+                                <option value="21">青海</option>
+                                <option value="22">山东</option>
+                                <option value="23">山西</option>
+                                <option value="24">陕西</option>
+                                <option value="25">上海</option>
+                                <option value="26">四川</option>
+                                <option value="27">天津</option>
+                                <option value="28">西藏</option>
+                                <option value="29">云南</option>
+                                <option value="30">浙江</option>
+                                <option value="31">重庆</option>
+                                <option value="32">香港</option>
+                                <option value="33">澳门</option>
+                                <option value="34">台湾</option>
+                            </select>
+                            <select name="city">
+                                <option value="1">-市/区-</option>
+
+                            </select>
+                            <input type="text" size="49"/>
+                        </p>
+                        <p class="s1">
+                            <label>代理商有效时间：</label>
+                            <input type="text" onclick="laydate()"/>
+                            至：
+                            <input type="text" onclick="laydate()"/>
+                        </p>
+                        <p class="s1"><label>负责人姓名：</label><input type="text" size="15"></p>
+                        <p class="s1"><label>负责人联系手机：</label><input type="text" size="20"></p>
+                        <p class="s1"><label>负责人Email：</label><input type="text" size="40"></p>
+                        <p class="s1">
+                            <label>状态：</label>
+                            <input name="status" value="1" type="radio" checked>启用
+                            <input name="status" value="0" type="radio">禁用
+                        </p>
+                        <p class="s1" style="color: #aaa;margin-bottom: 40px; " ><label>&nbsp;</label>（添加代理商后，代理商可用手机号或者邮箱登录，登录初始密码为123456）</p>
+                        <p class="s1 end">
+                            <label>&nbsp;</label><input value="确认提交" type="submit">
+                        </p>
+                        <div id="config_info">
+                            <p class="set_1">
+                                <label>返佣设置：</label>
+                                <input id="reb" name="rebate" value="1" type="radio" onclick="set_rebate1()" >返佣
+                                <input id="no_reb" name="rebate" value="0" type="radio" onclick="set_rebate2()" checked>不返佣
+                            </p>
+                            <p class="set_1">
+                                <label>考核指标：</label>
+                                <select name="assessment">
+                                    <option value="1">1.按月充值用户数</option>
+                                </select>
+                            </p>
+                            <dl id="con1" style="display: block;opacity: 0.3;">
+                                <dt>
+                                    <span class="title" style="width: 140px">返佣条件</span>
+                                    <span class="title" style="width: 68px;margin-left: 13px">返佣比例</span>
+                                </dt>
+                                <dd>
+                                    <span class="inp">1</span>~
+                                    <span class="inp">1000</span>
+                                    <input name="ratio_1" class="txt" type="text" readonly="readonly" data-max="10" value=""/>%
+                                </dd>
+                                <dd>
+                                    <span class="inp">1000</span>~
+                                    <span class="inp">3000</span>
+                                    <input name="ratio_1" class="txt" type="text" readonly="readonly" data-max="10" value=""/>%
+                                </dd>
+                                <dd>
+                                    <span class="inp">3000</span>~
+                                    <span class="inp">&nbsp;</span>
+                                    <input name="ratio_1" class="txt" type="text" readonly="readonly" data-max="10" value=""/>%
+                                </dd>
+                            </dl>
+                            <dl id="con2" style="display: none">
+                                <dt>
+                                    <span class="title" style="width: 140px">返佣条件</span>
+                                    <span class="title" style="width: 68px;margin-left: 13px">返佣比例</span>
+                                </dt>
+                                <dd>
+                                    <span class="inp">1</span>~
+                                    <span class="inp">1000</span>
+                                    <input name="ratio_1" class="txt" type="text" data-max="10" value=""/>%
+                                </dd>
+                                <dd>
+                                    <span class="inp">1000</span>~
+                                    <span class="inp">3000</span>
+                                    <input name="ratio_1" class="txt" type="text" data-max="10" value=""/>%
+                                </dd>
+                                <dd>
+                                    <span class="inp">3000</span>~
+                                    <span class="inp">&nbsp;</span>
+                                    <input name="ratio_1" class="txt" type="text" data-max="10" value=""/>%
+                                </dd>
+                            </dl>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src='./js/lib/jquery.js'></script>
+<script src='./js/page/common.js'></script>
+<script src="./js/page/addAgent.js"></script>
+</body>
+</html>

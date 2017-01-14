@@ -1,0 +1,169 @@
+.conMain {
+    padding: 0;
+    margin: 0;
+}
+
+.conMainWrap {
+    margin: 30px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.acTit {
+    padding-top: 0;
+    padding-bottom: 30px;
+    margin: 0;
+    border-bottom: 1px #aaa dotted;
+    font-size: 18px;
+    /*font-weight: bold;*/
+    font-family: 'microsoft yahei';
+}
+
+.sForm {
+    width: 100%;
+    overflow: hidden;
+}
+
+.userCode, .pacSelect,
+.payNum, .payType,
+.acBtn {
+    width: 970px;
+    margin-left: 140px;
+}
+
+.userCode, .pacSelect {
+    border-bottom: 1px #aaa dotted;
+    /*overflow: hidden;*/
+}
+
+.userCode {
+    font-size: 13px;
+}
+
+.userCodeLab {
+    margin-left: -60px;
+}
+
+.userCodeInp {
+    width: 250px;
+    padding: 0;
+    padding-left: 10px;
+    margin: 30px 0;
+    line-height: 32px;
+    border-radius: 6px;
+    border: 1px solid #cecece;
+}
+
+/*.userCodeInp:active {
+    border-color: #EEDDAB;
+}*/
+
+.pacSelect {
+    margin-top: 20px;
+}
+
+.pacSelectBtn {
+    float: left;
+    display: block;
+    margin-left: -72px;
+    font-size: 13px;
+}
+
+.pacType {
+    display: inline-block;
+    float: left;
+    width: 200px;
+    margin: -8px 90px 0 10px;
+    padding: 0;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+.pacTypeTit {
+    width: 200px;
+    /*padding: 15px 0;*/
+    margin: 5px 0 10px 0;
+    /*margin-bottom: 5px;*/
+    /*margin-top: -10px;*/
+    font: 700 14px/30px Tahoma;
+}
+
+.pacTypeItem {
+    position: relative;
+    padding: 0;
+    margin: 0 0 25px 0;
+    overflow: hidden;
+}
+
+.pacTypeItemInp, .pacItemType {
+    float: left;
+    display: block;
+}
+
+.pacTypeItemInp {
+    margin-right: 5px;
+}
+
+.pacTypeItemDet {
+    position: absolute;
+    right: 0;
+}
+
+.payNum {
+    margin-top: 30px;
+}
+
+.payNumTit {
+    margin-left: -72px;
+    font-size: 13px;
+}
+
+.payNumCon {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #EA3A27;
+}
+
+.payTypeItem {
+    float: left;
+    height: 55px;
+    margin: 20px 15px 20px 0;
+    /*overflow: hidden;*/
+}
+
+.payTypeImg {
+    /*float: left;*/
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.payTypeInp {
+    /*vertical-align: middle;*/
+}
+
+.acBtn {
+    float: left;
+    width: 100%;
+    margin: 20px 0 20px 140px;
+    /*display: block;*/
+}
+
+#acBtn {
+    height: 30px;
+    padding: 0 6px;
+    margin: 0 auto;
+    margin-left: 30px;
+    border: 1px solid #303942;
+    border-radius: 3px;
+    background-color: #303942;
+    color: #fff;
+    cursor: pointer;
+}
+
+.clearfix {
+    clear: both;
+}

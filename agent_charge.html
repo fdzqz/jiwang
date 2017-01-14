@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+	<title>流量运营系统 v1.0</title>
+    <link rel='stylesheet' href='css/common.css' />
+	<link rel='stylesheet' href='css/agent_charge.css' />
+</head>
+<body>
+    <!-- 头部 -->
+    <div id='header' class='header'>
+        <!-- 网站LOGO -->
+    	<a href='index' class='adminLogo'><img src='img/admin_logo.png' /></a>
+    	<div class='perInfor'>
+    		<p class='welCon'>欢迎您，<strong class='w_userName'></strong></p>
+    		<a href='editpw.html' class='perInforLink'><i class='changeWp_ico'></i><span>修改密码</span></a>
+    		<a href='#' class='perInforLink logOut'><i class='logOut_ico'></i><span>退出登录</span></a>
+    		<a href='#' class='perInforLink'><i class='annou_ico'></i><span>公告</span></a>
+    		<a href='#' class='perInforLink'><i class='help_ico'></i><span>帮助</span></a>
+    	</div>
+    </div>
+
+    <!-- 主体 -->
+    <div id='container' class='container'>
+        <!-- 菜单 -->
+    	<div class='lefMenuWrap'>
+    		<ul class='lefMenu'>
+    			<li class='menuItem'><a class='menuLink' href='identity.html'><i class='iden_ico'></i><span>用户实名</span></a></li>
+    			<li class='menuItem'><a class='menuLink' href='charge.html'><i class='charge_ico'></i><span>用户充值</span></a></li>
+    			<li class='menuItem'><a class='menuLink' href='paper.html'><i class='paper_ico'></i><span>库存报表</span></a></li>
+    			<li class='menuItem'><a class='menuLink' href='order.html'><i class='order_ico'></i><span>订单管理</span></a></li>
+    			<li class='menuItem'><a class='menuLink' href='agent.html'><i class='agent_ico'></i><span>代理商管理</span></a></li>
+    			<li class='menuItem menu_cur'><a class='menuLink' href='agent_charge.html'><i class='agCharge_ico'></i><span>套餐管理</span></a></li>
+    			<li class='menuItem'><a class='menuLink' href='sale.html'><i class='sale_ico'></i><span>成品卡充值</span></a></li>
+    		</ul>
+    	</div>
+    	<!-- 主体 -->
+    	<div class='conWrap'>
+    		<div class='content'>
+    		    <!-- 主体索引 -->
+    			<ul class='conNav'>
+    				<li class='conNavItem cnFirItem'><a class='conNavLink' href='index'><i class='index_ico'></i><span>平台首页</span></a></li>
+    				<li class='conNavItem cnSecItem'><a href='agent_charge'><span>套餐管理</span></a></li>
+    			</ul>
+    			<!-- 主体标题 -->
+    			<h2 class='conTit'><i class='conTit_ico'></i><span>套餐管理</span></h2>
+
+    			<!-- 可以在这里写相关版块代码 -->
+                <div class='conMain'>
+                    <div class='conMainWrap'>
+                        <h2 class='acTit'>设定成品卡批发价格</h2>
+                        <form class='acForm'>
+                            <!-- <div class='pacType'>
+                                <h4 class='pacTypeTit'>单月套餐</h4>
+                                <p class='pacTypeItem'>
+                                    <label for=''>1GB单月卡</label>
+                                    <input class='pacTypeItemInp' type='text' />
+                                    <span class='pacTypeItemDet'>最低价格：￥18.00</span>
+                                </p>
+                                <p class='pacTypeItem'>
+                                    <label for=''>2GB单月卡</label>
+                                    <input class='pacTypeItemInp' type='text' />
+                                    <span class='pacTypeItemDet'>最低价格：￥35.00</span>
+                                </p>
+                                <p class='pacTypeItem'>
+                                    <label for=''>3GB单月卡</label>
+                                    <input class='pacTypeItemInp' type='text' />
+                                    <span class='pacTypeItemDet'>最低价格：￥80.00</span>
+                                </p>
+                            </div>
+                            <div class='pacType'>
+                                <h4 class='pacTypeTit'>月固定套餐</h4>
+                                <p class='pacTypeItem'>
+                                    <label for=''>6GB半年/每月1GB</label>
+                                    <input class='pacTypeItemInp' type='text' />
+                                    <span class='pacTypeItemDet'>最低价格：￥88.00</span>
+                                </p>
+                                <p class='pacTypeItem'>
+                                    <label for=''>12GB半年/每月1GB</label>
+                                    <input class='pacTypeItemInp' type='text' />
+                                    <span class='pacTypeItemDet'>最低价格：￥165.00</span>
+                                </p>
+                                <p class='pacTypeItem'>
+                                    <label for=''>24GB半年/每月1GB</label>
+                                    <input class='pacTypeItemInp' type='text' />
+                                    <span class='pacTypeItemDet'>最低价格：￥280.00</span>
+                                </p>
+                                <p class='pacTypeItem'>
+                                    <label for=''>48GB半年/每月1GB</label>
+                                    <input class='pacTypeItemInp' type='text' />
+                                    <span class='pacTypeItemDet'>最低价格：￥360.00</span>
+                                </p>
+                                <p class='pacTypeItem'>
+                                    <label for=''>60GB半年/每月1GB</label>
+                                    <input class='pacTypeItemInp' type='text' />
+                                    <span class='pacTypeItemDet'>最低价格：￥450.00</span>
+                                </p>
+                            </div>
+                            <div class='pacType'>
+                                <h4 class='pacTypeTit'>累计套餐</h4>
+                                <p class='pacTypeItem'>
+                                    <label for=''>2G累计3个月</label>
+                                    <input class='pacTypeItemInp' type='text' />
+                                    <span class='pacTypeItemDet'>最低价格：￥30.00</span>
+                                </p>
+                                <p class='pacTypeItem'>
+                                    <label for=''>3G累计3个月</label>
+                                    <input class='pacTypeItemInp' type='text' />
+                                    <span class='pacTypeItemDet'>最低价格：￥45.00</span>
+                                </p>
+                                <p class='pacTypeItem'>
+                                    <label for=''>6G累计半年</label>
+                                    <input class='pacTypeItemInp' type='text' />
+                                    <span class='pacTypeItemDet'>最低价格：￥95.00</span>
+                                </p>
+                                <p class='pacTypeItem'>
+                                    <label for=''>9G累计半年</label>
+                                    <input class='pacTypeItemInp' type='text' />
+                                    <span class='pacTypeItemDet'>最低价格：￥135.00</span>
+                                </p>
+                                <p class='pacTypeItem'>
+                                    <label for=''>12G累计一年</label>
+                                    <input class='pacTypeItemInp' type='text' />
+                                    <span class='pacTypeItemDet'>最低价格：￥180.00</span>
+                                </p>
+                                <p class='pacTypeItem'>
+                                    <label for=''>18G累计一年</label>
+                                    <input class='pacTypeItemInp' type='text' />
+                                    <span class='pacTypeItemDet'>最低价格：￥255.00</span>
+                                </p>
+                                <p class='pacTypeItem'>
+                                    <label for=''>24G累计一年</label>
+                                    <input class='pacTypeItemInp' type='text' />
+                                    <span class='pacTypeItemDet'>最低价格：￥320.00</span>
+                                </p>
+                                <p class='pacTypeItem'>
+                                    <label for=''>48G累计一年</label>
+                                    <input class='pacTypeItemInp' type='text' />
+                                    <span class='pacTypeItemDet'>最低价格：￥630.00</span>
+                                </p>
+                                <p class='pacTypeItem'>
+                                    <label for=''>60G累计一年</label>
+                                    <input class='pacTypeItemInp' type='text' />
+                                    <span class='pacTypeItemDet'>最低价格：￥780.00</span>
+                                </p>
+                            </div> -->
+                            <div class='acBtn'>
+                                <input type='button' value='确认提交' id='acBtn' />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+    		</div>
+    	</div>
+    </div>
+    <script src='./js/lib/jquery.js'></script>
+    <script src='./js/page/common.js'></script>
+    <script src='./js/page/agent_charge.js'></script>
+</body>
+</html>
