@@ -12,10 +12,10 @@ jQuery && Git（Coding）
 - 学会了Git的基本指令，能用Git进行简单的项目开发。
 
 ## 笔记总结
-- REST API原理
-- HTTP基础知识
+- HTTP入门及面试题整理
 - 如何使用Ajax与后台进行交互（实现原理）
-- 模板技术
+- jQuery功能分析及源码实现（可以探讨下React代替了jQuery的哪些功能）
 - Google Dev Tools使用技巧
-- jQuery基本使用及源码实现（可以探讨下React代替了jQuery的哪些功能）
 - Git使用技巧
+- Visual Studio Code入门
+- 常见的设计模式及其实现（Js）
