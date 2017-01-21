@@ -12,10 +12,13 @@ jQuery && Git（Coding）
 - 学会了Git的基本指令，能用Git进行简单的项目开发。
 
 ## 笔记总结
+- jQuery：实现原理。
+- Git：在开发时的应用。
+- Ajax：这点其实可以挖掘得很深。（这时对于异步I/O的管理是通过回调，引发了后面对于异步I/O管理的思考）
+- 原生Js：比如作用域链、闭包以及继承等等。
+- Google Dev Tools的使用
 - HTTP入门及面试题整理
-- 如何使用Ajax与后台进行交互（实现原理）
-- jQuery功能分析及源码实现（可以探讨下React代替了jQuery的哪些功能）
-- Google Dev Tools使用技巧
-- Git使用技巧
-- Visual Studio Code入门
 - 常见的设计模式及其实现（Js）
+- Visual Studio Code入门
+- 如何用xMind画思维导图
+- 摄影初涉
