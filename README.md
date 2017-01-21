@@ -19,6 +19,7 @@ jQuery && Git（Coding）
 - Google Dev Tools的使用
 - HTTP入门及面试题整理
 - 常见的设计模式及其实现（Js）
+- JavaScript模块化方案归纳总结
 - Visual Studio Code入门
 - 如何用xMind画思维导图
 - 摄影初涉
